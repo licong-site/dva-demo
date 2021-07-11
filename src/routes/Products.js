@@ -5,7 +5,7 @@ import { connect } from "dva";
 const Products = ({ dispatch, products }) => {
   function handleDelete(id) {
     dispatch({
-      type: "products/delete",
+      type: "products/deleteAfter1Second",
       payload: id,
     });
   }
